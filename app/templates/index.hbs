@@ -1,31 +1,46 @@
-Index Page
-<div class="container">
-    <div class="col-md-4 col-md-offset-4">
-        <div class="row">
+
+<h1>Index Page</h1>
+<div class="row">
+    <div class="col-md-4">
+        <h2>Popover</h2>
+        <div class="example-container">
             <p>Show popover on the top</p>
             {{#base-popover position="top" label="Click Me" btnClass="btn-block"}}
                 Popover content!
             {{/base-popover}}
         </div>
-        <div class="row">
+        <div class="example-container">
             <p>Show popover on the right</p>
             {{#base-popover position="right" label="Click Me" btnClass="btn-block"}}
                 Popover content!
             {{/base-popover}}
         </div>
-        <div class="row">
+        <div class="example-container">
             <p>Show popover on the bottom</p>
             {{#base-popover position="bottom" label="Click Me" btnClass="btn-block"}}
                 Popover content!
             {{/base-popover}}
         </div>
-        <div class="row">
+        <div class="example-container">
             <p>Show popover on the left</p>
             {{#base-popover position="left" label="Click Me" btnClass="btn-block"}}
                 Popover content!
             {{/base-popover}}
         </div>
     </div>
-    
 </div>
+<div class="row">
+    <div class="col-md-4">
+        <h2>Modal Dialog</h2>
+        <div class="example-container">
+            <p>Simple modal dialog #1</p>
+            <button {{action 'showModal' 'setting-modal' model}} class="btn btn-success">setting</button>        
+        </div>
+        <div class="example-container">
+            <p>Simple modal dialog #2</p>
+            <button {{action 'showModal' 'logout-modal'}} class="btn btn-success">logout</button>        
+        </div>
+    </div>
+</div>
+
 {{outlet}}
